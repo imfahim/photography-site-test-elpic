@@ -51,3 +51,38 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+
+##How to Run this Project
+
+1. Add the laravel vendor folder to the project
+2. Import test-elpic.sql from Database folder to your MySQL server
+3. Edit the .env file and add Database & STMP mail service credentials
+	Example: 
+	DB_CONNECTION=mysql
+
+	DB_HOST=127.0.0.1
+
+	DB_PORT=3306
+
+	DB_DATABASE=test-elpic
+	
+DB_USERNAME=root
+	
+DB_PASSWORD=
+
+	MAIL_DRIVER=smtp
+	
+MAIL_HOST=smtp.gmail.com
+	
+MAIL_PORT=587
+
+	MAIL_USERNAME=yourmail@gmail.com (Make Sure this gmail id has less secure enable or it will throw error)
+	
+MAIL_PASSWORD=yourpassword
+	MAIL_ENCRYPTION=tls
+
+4. Open cmd in the poject directory and write "php artisan serve"
+5. "127.0.0.1:8000" this will be the project URL and to login into
+   existing account: email=im_fahim@yahoo.com password=123456
+   
+	
